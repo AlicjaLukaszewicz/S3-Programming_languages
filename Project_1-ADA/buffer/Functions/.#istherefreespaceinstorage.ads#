@@ -1,0 +1,15 @@
+with buffer;
+
+package IsThereFreeSpaceInStorage is
+
+   function IsThereFreeSpaceInStorage return Boolean is
+   begin
+   
+      if buffer.productsInStorage < buffer.storageCapacity then
+         return True;
+      else 
+         return False;
+      end if;
+   end IsThereFreeSpaceInStorage
+
+end IsThereFreeSpaceInStorage;
